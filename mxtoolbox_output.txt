@@ -1,0 +1,217 @@
+
+MX Logo
+SuperTool
+Pricing
+Tools
+Delivery Center
+Monitoring
+Products
+Blog
+Support
+Login
+
+    SuperTool
+    MX Lookup
+    Blacklists
+    DMARC
+    Diagnostics
+    Email Health
+    DNS Lookup
+    Analyze Headers
+
+    All Tools
+
+Header Analyzed
+Email Subject: CLIENTE PRIME - BRADESCO LIVELO: Seu cartão tem 92.990 pontos LIVELO expirando hoje!
+Copy/Paste Warning
+Copy/Pasting a header works for most people, but sometimes it can cause problems with things like DKIM Validation. For the best results, use our Email Deliverability tool
+Delivery Information
+
+    Problem Icon DMARC Compliant (No DMARC Record Found)
+        Problem Icon SPF Alignment
+        Problem Icon SPF Authenticated
+        Problem Icon DKIM Alignment
+        Problem Icon DKIM Authenticated
+
+Relay Information
+Received Delay: 	57 seconds
+Hop	Delay	From	By	With	Time (UTC)	Blacklist
+1	*	userid 	ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06 	 	9/19/2023 6:35:49 PM	
+2	55 seconds	ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06 137.184.34.4	BN8NAM11FT066.mail.protection.outlook.com 10.13.177.138	Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384)	9/19/2023 6:36:44 PM	[Not blacklisted]
+3	1 Second	BN8NAM11FT066.eop-nam11.prod.protection.outlook.com 2603:10b6:408:e6:cafe::23	BN0PR03CA0023.outlook.office365.com 2603:10b6:408:e6::28	Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384)	9/19/2023 6:36:45 PM	[Not blacklisted]
+4	0 seconds	BN0PR03CA0023.namprd03.prod.outlook.com 2603:10b6:408:e6::28	SA3PR19MB7370.namprd19.prod.outlook.com 2603:10b6:806:317::17	Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384)	9/19/2023 6:36:45 PM	[Not blacklisted]
+5	1 Second	SA3PR19MB7370.namprd19.prod.outlook.com ::1	MN0PR19MB6312.namprd19.prod.outlook.com 	HTTPS	9/19/2023 6:36:46 PM	[Is on a blacklist]
+
+
+SPF and DKIM Information
+dmarc:atendimento.com.br
+ 
+Sorry, we couldn't find any name servers for '_dmarc.atendimento.com.br'
+Reported by mxtoolbox.com on 6/24/2025 at 11:59:55 AM, just for you.  
+Transcript
+spf:ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06:::1
+ 
+Sorry, we couldn't find any name servers for 'ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06'
+Reported by mxtoolbox.com on 6/24/2025 at 11:59:55 AM, just for you.  
+Transcript
+
+Dkim Signature Error:
+No DKIM-Signature header found - more info
+
+Dkim Signature Error:
+There must be at least one aligned DKIM-Signature for the message to be considered aligned. - more info
+
+Headers Found
+Header Name	Header Value
+Authentication-Results	spf=temperror (sender IP is 137.184.34.4) smtp.mailfrom=ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06; dkim=none (message not signed) header.d=none;dmarc=temperror action=none header.from=atendimento.com.br;compauth=fail reason=001
+Received-SPF	TempError (protection.outlook.com: error in processing during lookup of ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06: DNS Timeout)
+X-IncomingTopHeaderMarker	OriginalChecksum:3B61F64750F88C5569DF38A496B2374685F23D8BC662A6A19B6823B2F6745D54;UpperCasedChecksum:62071BC7A7CF5B0844A7B406B0E9EFCDAA2CB94988E687CF8C56555AD4B52D30;SizeAsReceived:544;Count:9
+Content-type	text/html; charset=UTF-8
+Content-Transfer-Encoding	base64
+Subject	CLIENTE PRIME - BRADESCO LIVELO: Seu cartão tem 92.990 pontos LIVELO expirando hoje!
+From	BANCO DO BRADESCO LIVELO<banco.bradesco@atendimento.com.br>
+To	phishing@pot
+Message-Id	<20230919183549.39DEA3F725@ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06>
+Date	Tue, 19 Sep 2023 18:35:49 +0000 (UTC)
+X-IncomingHeaderCount	9
+Return-Path	root@ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06
+X-MS-Exchange-Organization-ExpirationStartTime	19 Sep 2023 18:36:44.2236 (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason	OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval	1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason	OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id	b9106deb-bd54-4815-e5c9-08dbb93f5fab
+X-EOPAttributedMessage	0
+X-EOPTenantAttributedMessage	84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality	Incoming
+X-MS-PublicTrafficType	Email
+X-MS-TrafficTypeDiagnostic	BN8NAM11FT066:EE_|SA3PR19MB7370:EE_|MN0PR19MB6312:EE_
+X-MS-Exchange-Organization-AuthSource	BN8NAM11FT066.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs	Anonymous
+X-MS-UserLastLogonTime	9/19/2023 6:25:15 PM
+X-MS-Office365-Filtering-Correlation-Id	b9106deb-bd54-4815-e5c9-08dbb93f5fab
+X-MS-Exchange-EOPDirect	true
+X-Sender-IP	137.184.34.4
+X-SID-PRA	BANCO.BRADESCO@ATENDIMENTO.COM.BR
+X-SID-Result	NONE
+X-MS-Exchange-Organization-PCL	2
+X-MS-Exchange-Organization-SCL	5
+X-Microsoft-Antispam	BCL:9;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime	19 Sep 2023 18:36:44.1298 (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id	b9106deb-bd54-4815-e5c9-08dbb93f5fab
+X-MS-Exchange-CrossTenant-Id	84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource	BN8NAM11FT066.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs	Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader	Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg	00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped	SA3PR19MB7370
+X-MS-Exchange-Transport-EndToEndLatency	00:00:02.6179349
+X-MS-Exchange-Processed-By-BccFoldering	15.20.6792.025
+X-Microsoft-Antispam-Mailbox-Delivery	wl:1;pcwl:1;ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:I;OFR:TrustedSenderList;ENG:(5062000305)(920221119095)(90000117)(920221120095)(91040095)(9050020)(9075021)(9100341)(944500132)(2008001134)(4810010)(4910033)(9610028)(9560006)(10180021)(9439006)(9310011)(9220031)(120001);
+X-Message-Info	qZelhIiYnPlgo3oeAkqKQrb/Je8fpvpPmRGjYwLej8PYXc5p/l16IG5I8gDUPoij+JWSvja0BAMLtkgrOcbx5zEN7V98T2UZUZs4k8BX/DcDfI7QJ0t2aouiqx4ENvkR1M3sDKP/XN09+50x9Rxi6onUtDV4eqq36VUi2qAa0zCzkJwjdl3Y9DzNE1OkaWjrHAizeUyMZ/UtK/Pz9zhA2A==
+X-Message-Delivery	Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0yO1NDTD0tMQ==
+X-Microsoft-Antispam-Message-Info	A9WDUZMTanasU4dmPSHTRQDkA4rh8seW3cdQ9awmUCMgdmU4TrvQOpYAKmyEEeTrlugn8j983BLEV3eoVVA75Vi+GiI5YIArG7oAcIyq26SkfpqpokfNsA0/30OlLIYh6HXDAeoDMBxHn30zgHdQgh44V7E4cRGr9q8dLQ4U8PGGTQLYg50SC79Kla8rbdNJMaXxiDJrrcJ1z/BeQQB+Dit+OI78ZgadIrD28l10GjfS5Ri6NGzhxMSrB9bHRbeOIp7c2DkcmJ4HZGQUqRx5UnkVGt+rrI+yVEd83aGnQl0pQt+bO5diP8HlWnrGkd4/gzGwWSZ7wR00t3k5yn1o4pzVb/KkcPUTPGHVk+aBqJHIqdDmSMXdEHfqkbHjxjaVufSozOANeFFr/WIYeJBqxOA1oretAr7MRpqYeHl2zQjoZ0QK4aUUHlLHX8SCuCUwVXPAYARZ7ehIgpvrEcqHB3v8iH98idTMNMaAnkPycmUwT2Oa+4TWvtLLrxGgiuQHKRnDI/CNpXk87PO7oj8dt3KNQ9zdqhkPguxYxBXS2T0NJwDVjeTimJJfzhdiQPd1h2ULYR6fZ5JuD4HbdHOHwDrQ+VA2DLs0YnEowS+TDpK+Q19PZXhcDzWbjDWKC6KoCly2BDxfFZiWACrT4r4ZCSExfV9ZNCkt9+g3qTdUfm+yVMdzqaBUKoF0NXE8s37xrKcLIR5xxozjn8VFfVz/ykAO4a5C1R7boM4WkzjjtUNRdc1lqjAMuiWtP1yxbtEGc1Y6ocVgJ56fCN+E7j3DjCL85fhLo0Uisy5I4DfshNBMrb4cG0qxluGrm54GnbBKz2+h2tjjxO1T6VxtWwEx734hUYaTehqCIVd9esCMRh6EIB+h3yBEMqMibgeVmunNeTz0
+Received Header
+
+Received: from SA3PR19MB7370.namprd19.prod.outlook.com (::1) by
+ MN0PR19MB6312.namprd19.prod.outlook.com with HTTPS; Tue, 19 Sep 2023 18:36:46
+ +0000
+Received: from BN0PR03CA0023.namprd03.prod.outlook.com (2603:10b6:408:e6::28)
+ by SA3PR19MB7370.namprd19.prod.outlook.com (2603:10b6:806:317::17) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6792.27; Tue, 19 Sep
+ 2023 18:36:45 +0000
+Received: from BN8NAM11FT066.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:e6:cafe::23) by BN0PR03CA0023.outlook.office365.com
+ (2603:10b6:408:e6::28) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6792.28 via Frontend
+ Transport; Tue, 19 Sep 2023 18:36:45 +0000
+Authentication-Results: spf=temperror (sender IP is 137.184.34.4)
+ smtp.mailfrom=ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06; dkim=none (message not
+ signed) header.d=none;dmarc=temperror action=none
+ header.from=atendimento.com.br;compauth=fail reason=001
+Received-SPF: TempError (protection.outlook.com: error in processing during
+ lookup of ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06: DNS Timeout)
+Received: from ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06 (137.184.34.4) by
+ BN8NAM11FT066.mail.protection.outlook.com (10.13.177.138) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6813.19 via Frontend Transport; Tue, 19 Sep 2023 18:36:44 +0000
+X-IncomingTopHeaderMarker:
+ OriginalChecksum:3B61F64750F88C5569DF38A496B2374685F23D8BC662A6A19B6823B2F6745D54;UpperCasedChecksum:62071BC7A7CF5B0844A7B406B0E9EFCDAA2CB94988E687CF8C56555AD4B52D30;SizeAsReceived:544;Count:9
+Received: by ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06 (Postfix, from userid 0)
+	id 39DEA3F725; Tue, 19 Sep 2023 18:35:49 +0000 (UTC)
+Content-type: text/html; charset=UTF-8
+Content-Transfer-Encoding: base64
+Subject: CLIENTE PRIME - BRADESCO LIVELO: Seu cartão tem 92.990 pontos LIVELO expirando hoje!
+From: BANCO DO BRADESCO LIVELO<banco.bradesco@atendimento.com.br>
+To: phishing@pot
+Message-Id: <20230919183549.39DEA3F725@ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06>
+Date: Tue, 19 Sep 2023 18:35:49 +0000 (UTC)
+X-IncomingHeaderCount: 9
+Return-Path: root@ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06
+X-MS-Exchange-Organization-ExpirationStartTime: 19 Sep 2023 18:36:44.2236
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ b9106deb-bd54-4815-e5c9-08dbb93f5fab
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ BN8NAM11FT066:EE_|SA3PR19MB7370:EE_|MN0PR19MB6312:EE_
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT066.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 9/19/2023 6:25:15 PM
+X-MS-Office365-Filtering-Correlation-Id: b9106deb-bd54-4815-e5c9-08dbb93f5fab
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 137.184.34.4
+X-SID-PRA: BANCO.BRADESCO@ATENDIMENTO.COM.BR
+X-SID-Result: NONE
+X-MS-Exchange-Organization-PCL: 2
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: BCL:9;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 19 Sep 2023 18:36:44.1298
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: b9106deb-bd54-4815-e5c9-08dbb93f5fab
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT066.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA3PR19MB7370
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.6179349
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6792.025
+X-Microsoft-Antispam-Mailbox-Delivery:
+	wl:1;pcwl:1;ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:I;OFR:TrustedSenderList;ENG:(5062000305)(920221119095)(90000117)(920221120095)(91040095)(9050020)(9075021)(9100341)(944500132)(2008001134)(4810010)(4910033)(9610028)(9560006)(10180021)(9439006)(9310011)(9220031)(120001);
+X-Message-Info:
+	qZelhIiYnPlgo3oeAkqKQrb/Je8fpvpPmRGjYwLej8PYXc5p/l16IG5I8gDUPoij+JWSvja0BAMLtkgrOcbx5zEN7V98T2UZUZs4k8BX/DcDfI7QJ0t2aouiqx4ENvkR1M3sDKP/XN09+50x9Rxi6onUtDV4eqq36VUi2qAa0zCzkJwjdl3Y9DzNE1OkaWjrHAizeUyMZ/UtK/Pz9zhA2A==
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0yO1NDTD0tMQ==
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?QTlXRFVaTVRhbmFzVTRkbVBTSFRSUURrQTRyaDhzZVczY2RROWF3bVVDTWdk?=
+ =?utf-8?B?bVU0VHJ2UU9wWUFLbXlFRWVUcmx1Z244ajk4M0JMRVYzZW9WVkE3NVZpK0dp?=
+ =?utf-8?B?STVZSUFyRzdvQWNJeXEyNlNrZnBxcG9rZk5zQTAvMzBPbExJWWg2SFhEQWVv?=
+ =?utf-8?B?RE1CeEhuMzB6Z0hkUWdoNDRWN0U0Y1JHcjlxOGRMUTRVOFBHR1RRTFlnNTBT?=
+ =?utf-8?B?Qzc5S2xhOHJiZE5KTWFYeGlESnJyY0oxei9CZVFRQitEaXQrT0k3OFpnYWRJ?=
+ =?utf-8?B?ckQyOGwxMEdqZlM1Umk2Tkd6aHhNU3JCOWJIUmJlT0lwN2MyRGtjbUo0SFpH?=
+ =?utf-8?B?UVVxUng1VW5rVkd0K3JySSt5VkVkODNhR25RbDBwUXQrYk81ZGlQOEhsV25y?=
+ =?utf-8?B?R2tkNC9nekd3V1NaN3dSMDB0M2s1eW4xbzRwelZiL0trY1BVVFBHSFZrK2FC?=
+ =?utf-8?B?cUpISXFkRG1TTVhkRUhmcWtiSGp4amFWdWZTb3pPQU5lRkZyL1dJWWVKQnF4?=
+ =?utf-8?B?T0Exb3JldEFyN01ScHFZZUhsMnpRam9aMFFLNGFVVUhsTEhYOFNDdUNVd1ZY?=
+ =?utf-8?B?UEFZQVJaN2VoSWdwdnJFY3FIQjN2OGlIOThpZFRNTk1hQW5rUHljbVV3VDJP?=
+ =?utf-8?B?YSs0VFd2dExMcnhHZ2l1UUhLUm5ESS9DTnBYazg3UE83b2o4ZHQzS05ROXpk?=
+ =?utf-8?B?cWhrUGd1eFl4QlhTMlQwTkp3RFZqZVRpbUpKZnpoZGlRUGQxaDJVTFlSNmZa?=
+ =?utf-8?B?NUp1RDRIYmRIT0h3RHJRK1ZBMkRMczBZbkVvd1MrVERwSytRMTlQWlhoY0R6?=
+ =?utf-8?B?V2JqRFdLQzZLb0NseTJCRHhmRlppV0FDclQ0cjRaQ1NFeGZWOVpOQ2t0OStn?=
+ =?utf-8?B?M3FUZFVmbSt5Vk1kenFhQlVLb0YwTlhFOHMzN3hyS2NMSVI1eHhvempuOFZG?=
+ =?utf-8?B?ZlZ6L3lrQU80YTVDMVI3Ym9NNFdrempqdFVOUmRjMWxxakFNdWlXdFAxeXhi?=
+ =?utf-8?B?dEVHYzFZNm9jVmdKNTZmQ04rRTdqM0RqQ0w4NWZoTG8wVWlzeTVJNERmc2hO?=
+ =?utf-8?B?Qk1yYjRjRzBxeGx1R3JtNTRHbmJCS3oyK2gydGpqeE8xVDZWeHRXd0V4NzM0?=
+ =?utf-8?B?aFVZYVRlaHFDSVZkOWVzQ01SaDZFSUIraDN5QkVNcU1pYmdlVm11bk5lVHow?=
+
+Permanently forget this email header
+Your IP is: 157.49.68.246 |  Contact Terms & Conditions Site Map Security API Privacy Phone: (866)-698-6652 |   © Copyright 2004-2021, MXToolBox, Inc, All rights reserved. US Patents 10839353 B2 & 11461738 B2
